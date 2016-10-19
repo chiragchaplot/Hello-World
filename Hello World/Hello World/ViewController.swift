@@ -6,13 +6,26 @@
 //  Copyright © 2016 ChazIT. All rights reserved.
 //
 
+//Without this we cannot work in the UI
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var label: UILabel!
+    
+    @IBOutlet var textField: UITextField!
+    
+    @IBAction func submit(sender: AnyObject) {
+        
+        print ("Button Pressed")
+        
+        label.text = textField.text
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        print("Hello Chirag")
     }
 
     override func didReceiveMemoryWarning() {
