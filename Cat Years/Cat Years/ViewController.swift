@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     
     @IBAction func submit(sender: AnyObject)
     {
-       //Crate a variable 
+       //Create a variable
        var catAge = Int(catAgeTextField.text!)!
        
        catAge = catAge * 7
-       resultLabel.text = "Your cat is \(catAge)"
+       resultLabel.text = "Your cat is \(catAge) in cat years."
     }
     
     @IBOutlet var resultLabel: UILabel!
